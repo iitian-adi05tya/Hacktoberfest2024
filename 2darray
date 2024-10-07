@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Define the number of rows and columns
+    int rows = 3;
+    int cols = 4;
+
+    // Declare a 2D array
+    int array[3][4];
+
+    // Initialize the 2D array with some values
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            array[i][j] = i * j; // You can initialize it with any logic or values
+        }
+    }
+
+    // Output the 2D array elements
+    cout << "2D Array elements:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cout << array[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
